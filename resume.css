@@ -1,0 +1,164 @@
+/* resume.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns header content to the left */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f1c40f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+.contact-info p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+.contact-info a {
+    color: #f1c40f;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #ffffff;
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #f1c40f;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.objective p {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+table th {
+    background: #f1c40f;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+table td {
+    color: #ecf0f1;
+}
+
+.skills, .interests {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin: 1rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    color: #ecf0f1;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.nav-button {
+    background: #f1c40f;
+    color: #1e3c72;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    background: #d35400;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}

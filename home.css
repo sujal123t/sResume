@@ -1,0 +1,110 @@
+/* home.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #2c3e50, #3498db);
+    color: #ffffff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ecf0f1;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.fade-in-on-load {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    margin: 1rem 0;
+}
+
+.call-to-action .cta-button {
+    background: #f39c12;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action .cta-button:hover {
+    background: #d35400;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
